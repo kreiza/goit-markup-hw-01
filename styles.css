@@ -1,4 +1,4 @@
-/* Reset */
+/* ===== Reset ===== */
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@
 body {
     font-family: "Roboto", sans-serif;
     color: #2E2F42;
-    background: #fff;
+    background-color: #ffffff;
 }
 
 a {
@@ -20,67 +20,76 @@ ul {
     list-style: none;
 }
 
-/* Container */
+/* ===== Container ===== */
 .container {
-    width: 100%;
     max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-/* Header */
-.header {
-    border-bottom: 1px solid #E7E9FC;
-    background: #fff;
+/* ===== Header ===== */
+header {
+    border-bottom: 1px solid #e7e9fc;
+    background-color: #ffffff;
 }
 
-.header-container {
+header nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 40px;
     height: 72px;
 }
 
-.logo {
+header nav a:first-child {
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
+    color: #4d5ae5;
 }
 
-.logo-web {
-    color: #4D5AE5;
-}
-
-.nav .menu {
+header nav ul {
     display: flex;
     gap: 40px;
 }
 
-.contacts {
+header nav ul a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #2e2f42;
+}
+
+address {
+    margin-left: auto;
+}
+
+address ul {
     display: flex;
     gap: 40px;
+}
+
+address a {
     font-size: 16px;
     color: #434455;
 }
 
-/* Hero */
-.hero {
-    background: #2E2F42;
-    padding: 120px 0;
+/* ===== Hero (Section 1) ===== */
+section:first-of-type {
+    background-color: #2e2f42;
+    color: #ffffff;
     text-align: center;
-    color: #fff;
+    padding: 188px 0;
 }
 
-.hero h1 {
+section:first-of-type h1 {
     font-size: 56px;
     line-height: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 48px;
 }
 
-.btn {
-    background: #4D5AE5;
-    color: #fff;
+section:first-of-type button {
+    background-color: #4d5ae5;
+    color: #ffffff;
     padding: 16px 32px;
     font-size: 16px;
     font-weight: 500;
@@ -89,81 +98,95 @@ ul {
     cursor: pointer;
 }
 
-/* Features */
-.features {
+/* ===== Features (Section 2) ===== */
+section:nth-of-type(2) {
     padding: 120px 0;
 }
 
-.features-container {
+section:nth-of-type(2) ul {
     display: flex;
     gap: 24px;
 }
 
-.features article {
-    flex: 1;
-}
-
-.features h3 {
+section:nth-of-type(2) h3 {
     font-size: 20px;
+    font-weight: 500;
     margin-bottom: 8px;
 }
 
-.features p {
+section:nth-of-type(2) p {
     font-size: 16px;
     color: #434455;
     line-height: 1.5;
 }
 
-/* Team */
-.team {
-    background: #F4F4FD;
-    padding: 120px 0;
+/* ===== Team (Section 3) ===== */
+section:nth-of-type(3) {
+    background-color: #f4f4fd;
     text-align: center;
+    padding: 120px 0;
 }
 
-.team h2 {
+section:nth-of-type(3) h2 {
     font-size: 36px;
+    font-weight: 700;
     margin-bottom: 72px;
 }
 
-.team-list {
+section:nth-of-type(3) ul {
     display: flex;
-    gap: 24px;
     justify-content: center;
+    gap: 24px;
     flex-wrap: wrap;
 }
 
-.team-card {
-    background: #fff;
-    border-radius: 4px;
-    box-shadow: 0 1px 6px rgba(46,47,66,0.08),
-    0 1px 1px rgba(46,47,66,0.16),
-    0 2px 1px rgba(46,47,66,0.08);
-    padding-bottom: 32px;
+section:nth-of-type(3) li {
+    background: #ffffff;
     width: 264px;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08),
+    0 1px 1px rgba(46, 47, 66, 0.16),
+    0 2px 1px rgba(46, 47, 66, 0.08);
+    padding-bottom: 32px;
 }
 
-.team-card h3 {
+section:nth-of-type(3) img {
+    display: block;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+section:nth-of-type(3) h3 {
     margin-top: 32px;
     margin-bottom: 8px;
     font-size: 20px;
+    font-weight: 500;
 }
 
-.team-card p {
-    color: #434455;
+section:nth-of-type(3) p {
     font-size: 16px;
+    color: #434455;
 }
 
-/* Footer */
-.footer {
-    background: #2E2F42;
-    color: #F4F4FD;
-    padding: 60px 0;
+/* ===== Footer ===== */
+footer {
+    background-color: #2e2f42;
+    color: #f4f4fd;
+    padding: 100px 0;
 }
 
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+footer a {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+footer p {
     max-width: 264px;
+    font-size: 16px;
+    line-height: 1.5;
 }
