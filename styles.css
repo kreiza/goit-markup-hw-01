@@ -1,0 +1,169 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #2E2F42;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+.header {
+    border-bottom: 1px solid #E7E9FC;
+    background: #fff;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+}
+
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.logo-web {
+    color: #4D5AE5;
+}
+
+.nav .menu {
+    display: flex;
+    gap: 40px;
+}
+
+.contacts {
+    display: flex;
+    gap: 40px;
+    font-size: 16px;
+    color: #434455;
+}
+
+/* Hero */
+.hero {
+    background: #2E2F42;
+    padding: 120px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 56px;
+    line-height: 60px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    background: #4D5AE5;
+    color: #fff;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Features */
+.features {
+    padding: 120px 0;
+}
+
+.features-container {
+    display: flex;
+    gap: 24px;
+}
+
+.features article {
+    flex: 1;
+}
+
+.features h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.features p {
+    font-size: 16px;
+    color: #434455;
+    line-height: 1.5;
+}
+
+/* Team */
+.team {
+    background: #F4F4FD;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 36px;
+    margin-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px rgba(46,47,66,0.08),
+    0 1px 1px rgba(46,47,66,0.16),
+    0 2px 1px rgba(46,47,66,0.08);
+    padding-bottom: 32px;
+    width: 264px;
+}
+
+.team-card h3 {
+    margin-top: 32px;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.team-card p {
+    color: #434455;
+    font-size: 16px;
+}
+
+/* Footer */
+.footer {
+    background: #2E2F42;
+    color: #F4F4FD;
+    padding: 60px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 264px;
+}
